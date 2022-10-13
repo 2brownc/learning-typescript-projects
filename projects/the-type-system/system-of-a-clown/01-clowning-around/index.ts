@@ -5,7 +5,7 @@ while (true) {
 	const guestsToAssign = Math.floor(Math.random() * 5) + 5;
 	let activity;
 	let capacity;
-	let requiresSupplies;
+	let requiresSupplies: boolean;
 
 	switch (Math.floor(Math.random() * 5)) {
 		case 0:
@@ -15,7 +15,7 @@ while (true) {
 			break;
 		case 1:
 			activity = "face painting";
-			capacity = "1";
+			capacity = 1;
 			requiresSupplies = true;
 			break;
 		case 2:
@@ -44,5 +44,4 @@ while (true) {
 }
 
 console.log("\nAll done!");
-
 export {};
